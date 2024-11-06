@@ -33,10 +33,22 @@
 <img src="./images/jackets.jpg" id="season">
 <br><br>
 <div>
-<button id="S">Summer</button>
-<button id="W">Winter</button>
-<button id="M">Mansoon</button>
+<button id="S" onclick="S()">Summer</button>
+<button id="W"onclick="W()">Winter</button>
+<button id="M" onclick="M()">Mansoon</button>
 </div>
+<script>
+    const season=document.getElementById('season');
 
+    function S(){
+        season.src="./images/sun.jpeg";
+    }
+    function W(){
+        season.src="./images/jackets.jpg";
+    }
+    function M(){
+        season.src="./images/umbrella.jpeg";
+    }
+</script>
 </body>
 </html>
